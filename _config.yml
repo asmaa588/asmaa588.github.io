@@ -30,10 +30,12 @@ twitter:
 # Author and social links
 social:
   name: "Asmaa Salah | OwL 🦉🖤"
-  email:
+  email: "asmaasalh3424@gmail.com"
   fediverse_handle:
   links:
-    - https://github.com/asmaa588
+        - https://github.com/asmaa588
+        - https://www.linkedin.com/in/asmaa-salah-6144a32a4
+        - https://medium.com/@owl30
 
 # Search engine verification
 webmaster_verifications:
