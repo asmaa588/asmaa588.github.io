@@ -9,12 +9,12 @@ lang: en
 timezone: Africa/Cairo
 
 # Site identity and SEO
-title: Silent OwL
-tagline: Cybersecurity | Networking | Cloud Security
+title: "Asmaa Salah | OwL"
+tagline: "Cybersecurity | Networking | Cloud Security"
 description: >-
   Asmaa Salah's personal cybersecurity portfolio and technical blog,
   documenting hands-on work in network security, penetration testing,
-  cloud security, and technical investigations.
+  cloud security, and technical investigations under the Silent OwL identity.
 
 url: "https://asmaa588.github.io"
 baseurl: ""
@@ -29,7 +29,7 @@ twitter:
 
 # Author and social links
 social:
-  name: Asmaa Salah
+  name: "Asmaa Salah | OwL"
   email:
   fediverse_handle:
   links:
@@ -87,7 +87,7 @@ actions:
     url: ""
     static_url: false
 
-# Comments (disabled until configured)
+# Comments
 comments:
   provider:
   disqus:
@@ -198,6 +198,3 @@ jekyll-archives:
   layouts:
     category: category
     tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
