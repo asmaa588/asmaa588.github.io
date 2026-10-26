@@ -8,13 +8,13 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Africa/Cairo
 
-# Site identity and SEO
+# Site identity
 title: "Asmaa Salah | OwL"
 tagline: "Cybersecurity | Networking | Cloud Security"
 description: >-
-  Asmaa Salah's personal cybersecurity portfolio and technical blog,
-  documenting hands-on work in network security, penetration testing,
-  cloud security, and technical investigations under the Silent OwL identity.
+  Asmaa Salah's cybersecurity portfolio and technical blog,
+  featuring hands-on projects, penetration testing labs,
+  network security, AWS cloud security, and technical writeups.
 
 url: "https://asmaa588.github.io"
 baseurl: ""
@@ -71,7 +71,7 @@ theme_mode: dark
 # CDN
 cdn:
 
-# Sidebar avatar (configure later)
+# Sidebar avatar
 avatar:
 
 # Social preview image
@@ -122,7 +122,7 @@ pwa:
 # Pagination
 paginate: 10
 
-# Jekyll configuration
+# Markdown and syntax highlighting
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
@@ -198,3 +198,6 @@ jekyll-archives:
   layouts:
     category: category
     tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
