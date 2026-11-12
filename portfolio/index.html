@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10101d">
+<meta name="description" content="Asmaa Salah — Communications Engineering graduate focused on Cloud Security, Cybersecurity, and Network Infrastructure.">
+<title>Asmaa Salah | Cloud Security & Engineering</title>
+<style>
+:root{--bg:#0c0c16;--panel:#141421;--panel2:#19192a;--ink:#f3f0ff;--muted:#aaa6bd;--purple:#9b83ff;--gold:#e4c477;--line:rgba(255,255,255,.10);--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(105,76,190,.18),transparent 35%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(12,12,22,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.12em;font-size:14px}.brand span{color:var(--gold)}nav{display:flex;gap:25px;color:var(--muted);font-size:13px}nav a:hover,.textlink:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 11px;border-radius:9px}
+.hero{padding:100px 0 85px;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;min-height:610px}
+.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.03;letter-spacing:-.055em;margin:18px 0 20px}h1 .accent{color:var(--purple)}
+.lead{font-size:17px;color:#c5c0d5;max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 18px;border-radius:10px;font-size:13px;font-weight:700;border:1px solid var(--line);display:inline-flex;gap:9px;align-items:center}.primary{background:var(--purple);color:#100d1c;border-color:var(--purple)}.secondary:hover{border-color:var(--gold);color:var(--gold)}
+.hero-card{border:1px solid rgba(155,131,255,.27);background:linear-gradient(145deg,rgba(155,131,255,.13),rgba(228,196,119,.04));border-radius:24px;padding:28px;position:relative;overflow:hidden}
+.orbit{width:190px;height:190px;border:1px solid rgba(228,196,119,.4);border-radius:50%;margin:8px auto 25px;display:grid;place-items:center;position:relative}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(155,131,255,.45);border-radius:50%;inset:17px}.orbit:after{inset:36px;border-color:rgba(228,196,119,.5)}
+.owl{font-size:66px;filter:drop-shadow(0 0 22px rgba(155,131,255,.55))}
+.terminal{font:12px/1.9 ui-monospace,SFMono-Regular,monospace;color:#c9c3e0}.terminal b{color:var(--gold);font-weight:500}.status{color:#9fe0bc}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.quick div{background:rgba(10,10,20,.45);border:1px solid var(--line);padding:12px;border-radius:12px}.quick strong{display:block;color:var(--gold);font-size:17px}.quick small{color:var(--muted);font-size:10px}
+section{padding:78px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}.kicker{color:var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:8px 0 0;letter-spacing:-.035em}.section-note{color:var(--muted);max-width:430px;font-size:13px}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px}.about-copy{color:#c7c3d4;font-size:15px}.about-copy p{margin-top:0}.facts{display:grid;gap:12px}.fact{padding:17px 18px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}.fact b{display:block;color:var(--gold);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.fact span{font-size:13px;color:#ddd8ec}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(145deg,var(--panel),#11111c);border:1px solid var(--line);border-radius:17px;padding:23px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:rgba(155,131,255,.5)}.tag{display:inline-block;color:var(--gold);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:11px}.card h3{margin:0 0 9px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:13px}.meta{margin-top:15px;color:#c6baff;font-size:11px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.skillbox{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:19px}.skillbox h3{font-size:14px;margin:0 0 12px;color:var(--gold)}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{font-size:11px;color:#d7d2e5;background:#222136;border:1px solid rgba(155,131,255,.18);padding:6px 9px;border-radius:7px}
+.timeline{border-left:1px solid rgba(155,131,255,.45);margin-left:8px;padding-left:24px;display:grid;gap:22px}.entry{position:relative}.entry:before{content:"";position:absolute;left:-30px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(228,196,119,.1)}.entry h3{margin:0;font-size:16px}.entry p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.service{padding:18px;border:1px solid var(--line);border-radius:13px;background:var(--panel)}.service b{display:block;margin-bottom:5px;font-size:14px}.service span{font-size:12px;color:var(--muted)}
+.callout{background:linear-gradient(120deg,rgba(155,131,255,.16),rgba(228,196,119,.08));border:1px solid rgba(155,131,255,.3);border-radius:18px;padding:25px;color:#d8d3e7;font-size:13px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.links{display:flex;flex-wrap:wrap;gap:10px}.links a{border:1px solid var(--line);border-radius:9px;padding:10px 13px;color:#d7d2e5;font-size:12px}.links a:hover{border-color:var(--gold);color:var(--gold)}
+footer{padding:26px 0;color:#77738b;font-size:11px;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#11111d;padding:18px 22px;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr;padding:72px 0 55px;gap:35px;min-height:0}.hero-card{max-width:470px}.about-grid,.contact{grid-template-columns:1fr}.grid,.service-list{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.section-head{display:block}.section-note{margin-top:12px}.quick{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:430px){.skills{grid-template-columns:1fr}.wrap{width:min(var(--max),calc(100% - 30px))}.hero{padding-top:55px}.quick small{font-size:9px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">ASMAA <span>·</span> OWL</a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">MENU</button>
+<nav>
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+</nav></div></header>
+
+<main>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow">Communications Engineering · Cloud & Infrastructure Security</div>
+<h1>Building a safer<br><span class="accent">digital</span> foundation.</h1>
+<p class="lead">I’m Asmaa Salah — a Communications Engineering graduate developing practical skills in AWS Cloud Security, cybersecurity, and network infrastructure. I turn technical learning into clear, structured, and documented work.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Explore my work <span>↗</span></a>
+<a class="btn secondary" href="#contact">Get in touch</a>
+</div>
+</div>
+<aside class="hero-card">
+<div class="orbit"><div class="owl">🦉</div></div>
+<div class="terminal">
+<div><b>owl@nebula</b>:~$ whoami</div>
+<div>Asmaa Salah</div>
+<div><b>owl@nebula</b>:~$ focus --list</div>
+<div>→ AWS Cloud Security</div><div>→ Network Infrastructure</div><div>→ Cybersecurity</div>
+<div class="status">[ available for clearly-scoped projects ]</div>
+</div>
+<div class="quick">
+<div><strong>AWS</strong><small>Cloud security labs</small></div>
+<div><strong>Linux</strong><small>Systems & CLI</small></div>
+<div><strong>Networks</strong><small>Engineering base</small></div>
+</div>
+</aside>
+</div>
+
+<section id="about"><div class="wrap">
+<div class="section-head"><div><div class="kicker">01 / About</div><h2>Engineer by foundation.<br>Security-minded by direction.</h2></div><p class="section-note">A practical, learning-driven profile grounded in engineering, hands-on labs, and clear communication.</p></div>
+<div class="about-grid">
+<div class="about-copy">
+<p>I am a Communications Engineering graduate with a growing focus on Cloud Security, Cybersecurity, and Network Infrastructure. My approach is hands-on: understand the concept, apply it in a controlled environment, verify the result, and document what happened.</p>
+<p>Alongside my technical development, I bring more than three years of customer support experience. Working in structured service environments strengthened my communication, problem-solving, attention to detail, and ability to follow defined processes.</p>
+<p>I am currently building my technical portfolio through AWS labs, security learning platforms, and engineering projects. I value honest scope, reproducible steps, and useful handovers.</p>
+</div>
+<div class="facts">
+<div class="fact"><b>Education</b><span>Communications Engineering graduate</span></div>
+<div class="fact"><b>Primary direction</b><span>AWS Cloud Security & Network Infrastructure</span></div>
+<div class="fact"><b>Working style</b><span>Structured · Documented · Detail-oriented</span></div>
+<div class="fact"><b>Languages</b><span>Arabic · English</span></div>
+</div></div></div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><div><div class="kicker">02 / Technical toolkit</div><h2>Skills & technologies</h2></div><p class="section-note">Foundational and developing capabilities gained through engineering study, guided training, and controlled hands-on labs.</p></div>
+<div class="skills">
+<div class="skillbox"><h3>Cloud & AWS</h3><div class="chips"><span class="chip">AWS Fundamentals</span><span class="chip">IAM</span><span class="chip">S3 Policies</span><span class="chip">CloudTrail</span><span class="chip">CloudWatch</span><span class="chip">EventBridge</span><span class="chip">SNS</span><span class="chip">Security Groups</span></div></div>
+<div class="skillbox"><h3>Cybersecurity</h3><div class="chips"><span class="chip">Access Control</span><span class="chip">Least Privilege</span><span class="chip">Security Monitoring</span><span class="chip">Web Security Fundamentals</span><span class="chip">Blue Team Basics</span></div></div>
+<div class="skillbox"><h3>Networking</h3><div class="chips"><span class="chip">TCP/IP</span><span class="chip">Network Fundamentals</span><span class="chip">Segmentation Concepts</span><span class="chip">Connectivity</span><span class="chip">Infrastructure</span></div></div>
+<div class="skillbox"><h3>Systems & Tools</h3><div class="chips"><span class="chip">Linux</span><span class="chip">Kali Linux</span><span class="chip">VMware</span><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
+<div class="skillbox"><h3>Automation & Code</h3><div class="chips"><span class="chip">Terraform Fundamentals</span><span class="chip">Python</span><span class="chip">C/C++</span><span class="chip">Markdown</span></div></div>
+<div class="skillbox"><h3>Engineering</h3><div class="chips"><span class="chip">ROS1</span><span class="chip">Gazebo</span><span class="chip">RViz</span><span class="chip">RPLIDAR</span><span class="chip">Embedded Systems</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><div><div class="kicker">03 / Selected work</div><h2>Projects & practical learning</h2></div><p class="section-note">A selection of collaborative engineering work and guided technical labs. Each item is labelled by its actual context.</p></div>
+<div class="grid">
+<article class="card"><span class="tag">Collaborative capstone · AWS</span><h3>Secure AWS Network Architecture</h3><p>Team capstone covering secure network architecture and hybrid connectivity. My focus area is Edge Security: CloudFront, S3 origin access, AWS WAF, logging, and alerting concepts.</p><div class="meta">AWS · CloudFront · S3 · WAF · Route 53 · Terraform</div><div class="meta"><a class="textlink" href="https://github.com/alberayman/aws-secure-network" target="_blank" rel="noreferrer">View team repository ↗</a></div></article>
+<article class="card"><span class="tag">Guided labs · AWS Security</span><h3>AWS Security Monitoring</h3><p>Hands-on learning with CloudTrail events, CloudWatch monitoring, EventBridge rule concepts, SNS notifications, and alarm thresholds for security visibility.</p><div class="meta">CloudTrail · CloudWatch · EventBridge · SNS</div></article>
+<article class="card"><span class="tag">Guided labs · Access control</span><h3>S3 & IAM Access Control</h3><p>Practiced reading S3 bucket policies, IAM roles, access settings, and least-privilege principles in a controlled learning environment.</p><div class="meta">AWS IAM · S3 · Bucket Policies</div></article>
+<article class="card"><span class="tag">Academic team project</span><h3>Autonomous Accident Avoidance</h3><p>Graduation project exploring an autonomous vehicle concept for accident avoidance and emergency support, combining sensing, robotics software, mapping, and embedded hardware.</p><div class="meta">ROS1 Noetic · Raspberry Pi 4 · RPLIDAR A1 · Hector SLAM · GPS · Tiva C</div></article>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><div><div class="kicker">04 / Background</div><h2>Experience & learning path</h2></div><p class="section-note">Professional service experience and ongoing technical development — clearly separated.</p></div>
+<div class="grid">
+<div class="card"><span class="tag">Professional experience</span><h3>Customer Support & Service Operations</h3><p>More than three years of experience across customer support environments, including customer communication, case handling, service workflows, and supporting new team members.</p><div class="meta">Communication · Problem solving · Process discipline</div></div>
+<div class="card"><span class="tag">Technical development</span><h3>Cloud & Cybersecurity Training</h3><p>Structured learning across AWS cloud fundamentals and security, blue-team concepts, penetration-testing foundations, network security, and Cisco cybersecurity topics.</p><div class="meta">Training and labs — not claimed as completed certifications</div></div>
+</div>
+<div style="height:25px"></div>
+<div class="timeline">
+<div class="entry"><h3>AWS Cloud & Security</h3><p>Cloud architecture and security learning, AWS hands-on labs, monitoring, identity, and access control.</p></div>
+<div class="entry"><h3>Cybersecurity & Network Security</h3><p>Blue-team and penetration-testing foundations, web security concepts, and legal lab-based practice.</p></div>
+<div class="entry"><h3>Engineering foundation</h3><p>Communications Engineering studies and an interdisciplinary autonomous-vehicle graduation project.</p></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="section-head"><div><div class="kicker">05 / Collaboration</div><h2>How I can help</h2></div><p class="section-note">Best suited to well-defined, entry-level technical tasks with clear scope and agreed deliverables.</p></div>
+<div class="service-list">
+<div class="service"><b>AWS security documentation</b><span>Document a test S3 bucket’s access configuration, policy observations, and basic recommendations.</span></div>
+<div class="service"><b>Cloud monitoring lab reports</b><span>Write clear step-by-step documentation for CloudTrail / CloudWatch / SNS lab exercises.</span></div>
+<div class="service"><b>Network documentation</b><span>Prepare a concise explanation or diagram based on a supplied small network design.</span></div>
+<div class="service"><b>Technical documentation</b><span>Organize technical notes, configuration steps, screenshots, and polished PDF handovers.</span></div>
+</div>
+<div style="height:18px"></div>
+<div class="callout"><b>Scope & authorization:</b> I only work on systems and environments where permission has been provided. Production access, penetration testing, and live infrastructure changes are not assumed; they require explicit authorization and an agreed scope.</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><div class="kicker">06 / Contact</div><h2>Let’s build something<br><span style="color:var(--purple)">secure & useful.</span></h2><p class="section-note">Have a clearly scoped technical task or collaboration in mind? Reach out and tell me what you need.</p></div>
+<div class="links">
+<a href="mailto:asmaasalh3424@gmail.com">Email ↗</a>
+<a href="https://www.linkedin.com/in/asmaa-salah-6144a32a4" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+<a href="https://github.com/asmaa588" target="_blank" rel="noreferrer">GitHub ↗</a>
+<a href="https://medium.com/@owl30" target="_blank" rel="noreferrer">Medium ↗</a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="year"></span> Asmaa Salah · OwL</span><span>Cloud Security · Cybersecurity · Engineering</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body></html>
